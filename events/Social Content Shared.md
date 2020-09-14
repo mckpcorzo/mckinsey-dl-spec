@@ -1,5 +1,7 @@
 # Social Content Shared
 
+Fire whenever a social share link is clicked, but do not fire on static link to a social network. Prioritize this last as it may change.
+
 ## Javascript Code
 
 ```js

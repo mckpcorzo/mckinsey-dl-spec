@@ -1,5 +1,7 @@
 # Generic Event Occurred
 
+Fire whenever a generic event with no specific built-in or custom dimensions or metrics occurs.
+
 ## Javascript Code
 
 ```js
@@ -9,7 +11,7 @@ appEventData.push({
   "genericEvent": {
     "action": "<action>",
     "category": "<category>",
-    "label": "<label>",
+    "label": "<label>"
   }
 });
 ```

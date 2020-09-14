@@ -1,5 +1,7 @@
 # User Unsubscribed
 
+Fire whenever a user unsubscribes from a campaign or information source.
+
 ## Javascript Code
 
 ```js

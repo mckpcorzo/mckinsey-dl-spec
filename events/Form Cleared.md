@@ -1,5 +1,7 @@
 # Form Submission Succeeded
 
+Fire whenever a form clear/reset action is performed.
+
 ## Javascript Code
 
 ```js

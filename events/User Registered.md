@@ -1,5 +1,7 @@
 # User Registered
 
+Fire whenever a user completes the process of registering for an account.
+
 ## Javascript Code
 
 ```js

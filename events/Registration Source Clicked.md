@@ -1,6 +1,6 @@
 # Registration Source Clicked
 
-This event should be fired whenever a registration link is clicked on?
+Fire whenever a link directing a user to register is clicked on. It is used to populate a cookie to track registration source. Prioritize this last as it may change.
 
 ## Javascript Code
 

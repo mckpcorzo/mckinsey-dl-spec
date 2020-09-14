@@ -1,5 +1,7 @@
 # User Subscribed
 
+Fire whenever a user subscribes to a campaign or information source.
+
 ## Javascript Code
 
 ```js

@@ -1,5 +1,7 @@
 # Download Link Clicked
 
+Fire whenever a downloadable file link is clicked. Prioritize this last as it may change.
+
 ## Javascript Code
 
 ```js
@@ -18,5 +20,5 @@ appEventData.push({
 |Field|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |fileName|string|Indicates the filename for download link tracking. Derived from the anchor href attribute|Year End 2012.pdf, Operating Instructions.doc`|
-|reportName|string|Name of a downloaded file as specified by McKinsey|meet-the-next-normal-consumer
+|reportName|string|Name of a downloaded file as specified by McKinsey|meet-the-next-normal-consumer|
 |reportType|string|Type of a downloaded file. Not the file extension, but rather custom types provided by the site.|pdf, article|

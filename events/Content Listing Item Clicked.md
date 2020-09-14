@@ -1,13 +1,15 @@
 # Content Listing Item Clicked
 
+Fire whenever a user clicks on a search result listing (job, employee profile, or content item, etc).
+
 ## Javascript Code
 
 ```js
 window.appEventData = window.appEventData || [];
 appEventData.push({
-  "event": "Social Content Shared",
+  "event": "Content Listing Item Clicked",
   "listingItemClicked": {
-    "itemPosition": "<itemPosition>",
+    "itemPosition": "<itemPosition>"
   }
 });
 ```
