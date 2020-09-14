@@ -1,9 +1,10 @@
-# Page Load Completed
+# User Profile Updated
 
 ## Javascript Code
+
 ```js
 window.appEventData = window.appEventData || [];
 appEventData.push({
-  'event': 'Page Load Completed'
-})
+  "event": "User Profile Updated"
+});
 ```

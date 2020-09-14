@@ -1,9 +1,10 @@
-# Page Load Completed
+# User Sign In Errored
 
 ## Javascript Code
+
 ```js
 window.appEventData = window.appEventData || [];
 appEventData.push({
-  'event': 'Page Load Completed'
-})
+  "event": "User Sign In Errored",
+});
 ```

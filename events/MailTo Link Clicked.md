@@ -1,9 +1,10 @@
-# Page Load Completed
+# MailTo Link Clicked
 
 ## Javascript Code
+
 ```js
 window.appEventData = window.appEventData || [];
 appEventData.push({
-  'event': 'Page Load Completed'
-})
+  "event": "MailTo Link Clicked",
+});
 ```
