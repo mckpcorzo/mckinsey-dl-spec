@@ -19,8 +19,8 @@ appEventData.push({
 ```
 ## Variable Definitions
 
-|Field|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|Field|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |companyName|string|The User Company Name|McKinsey & Company|
 |custKey|string|Set to People Services ID (If a user has a registered mckinsey.com account)
 |jobTitle|string|Captures the job title of a logged-in registered site visitor, based off the self-reported registration information in the logged-in site user's profile.|Director/ General Manager|

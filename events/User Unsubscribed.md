@@ -15,6 +15,6 @@ appEventData.push({
 ```
 ## Variable Definitions
 
-|Field|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|Field|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |subscriptionType|string|Describes the type of subscription.|news, updates, sales, events, rss|

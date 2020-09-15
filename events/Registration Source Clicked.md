@@ -16,7 +16,7 @@ appEventData.push({
 ```
 ## Variable Definitions
 
-|Field|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|registrationPageSource|The current pageName|home\|mckinsey and company|
-|registrationSource|The click region that led user to registration start events|article print header|
+|Field|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|registrationPageSource|string|The current pageName|home\|mckinsey and company|
+|registrationSource|string|The click region that led user to registration start events|article print header|

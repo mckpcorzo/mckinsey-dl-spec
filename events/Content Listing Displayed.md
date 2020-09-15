@@ -21,9 +21,9 @@ appEventData.push({
 
 ## Variable Definitions
 
-|Field|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|Field|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |facets|array|The facets/filters/refinements used in a search|["key\|value", "location\|Brazil", "interests\|analytics"]|
-|resultsCount|integer|The total number of items returned that matched the search criteria.|
+|resultsCount|integer|The total number of items returned that matched the search criteria.|10|
 |searchTerm|string|Describes the search keyword used after auto-correct, auto-complete, or keyword suggestion.|bluth, blue, red lobster|
 |searchType|string|Describes the type of search performed.|article, content, job, people, etc.|
