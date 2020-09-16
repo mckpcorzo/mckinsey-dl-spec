@@ -4,7 +4,7 @@ This should be the first event to fire on most pages. Sets page-level variables 
 
 ## Javascript Code
 ```js
-window.appEventData = window.appEventData  [];
+window.appEventData = window.appEventData || [];
 appEventData.push({
   "event": "Page Load Started",
   "page": {
