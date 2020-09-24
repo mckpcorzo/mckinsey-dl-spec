@@ -1,16 +1,16 @@
-# Navigation Link Clicked
+# UI Item Clicked
 
-This is the fallback event that will be sent if an HTML anchor link is clicked and no other more specialized click event is triggered (cta, download, exit, etc). The data attribute spec enables manually overriding the more specialized clicks to classify a link as simple navigation.
+These HTML attributes should be added to items that do not qualify as CTAs, but that still need to be tracked. Examples include expanding a UI accordion, clicking on a tab, or clicking on an interactive component.
 
 ## Data Attributes HTML Code
 
 ```html
   <a href="<linkDestination>"
-    data-layer-eventPrefix="Navigation Link"
+    data-layer-eventPrefix="UI Item"
     data-layer-action="click"
-    data-layer-linkInfo-category="<category>"
-    data-layer-linkInfo-subcategory="<subcategory?>"
-    data-layer-linkInfo-text="<linkText?>"
+    data-layer-category="<category>"
+    data-layer-subcategory="<subcategory?>"
+    data-layer-linkText="<linkText?>"
   >
 ```
 
@@ -21,10 +21,10 @@ Items with a ? are optional
 ```js
 window.appEventData = window.appEventData || [];
 appEventData.push({
-  "event": "Navigation Link Clicked",
+  "event": "CTA Link Clicked",
   "linkInfo": {
-    "category": "<category>"
-    "subcategory": "<subcategory?>"
+    "category": "<category>",
+    "subcategory": "<subcategory>"
     "region": "<region?>",
     "text": "<text>",
   }
