@@ -8,14 +8,14 @@ window.appEventData = window.appEventData || [];
 appEventData.push({
   "event": "Page Load Started",
   "page": {
-    "browserMode": "<browserMode>",
+    "characterLength": "<characterLength>",
+    "contentType": "<contentType>",
     "daysSinceLastPublish": "<daysSinceLastPublish>",
     "displayDate": "<displayDate>",
     "editorialMonthPublicationDate": "<editorialMonthPublicationDate>",
-    "pageCategory": "<pageCategory>",
+    "domain": "<domain>",
     "pageName": "<pageName>",
     "pageTitle": "<pageTitle>",
-    "pageTopic": "<pageTopic>",
     "pageType": "<pageType>",
     "siteCoreId": "<siteCoreId>",
     "subsection": "<subsection>",
@@ -35,14 +35,14 @@ appEventData.push({
 |Field|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |article.source|string|The Publishing Source variable captures the publishing source of a piece of content (McKinsey Quarterly, MGI, etc.); if a value isn't available, the default value is set to "McKinsey Generic."|
-|page.browserMode|string|Detects if a visitor to the site is using a browser with private browsing mode enabled. Returns a state of either "private", "not_private" or "not_applicable" if undedected|
+|page.characterLength|integer|The Content Character Length variable counts the number of characters within the body of an I&P page; it is common to get multiple values for this variable due to different browsers. This is also classified into Article Length segments based off an estimated word count (6.7 characters = 1 word); this count is most comparable to the "characters with spaces" count in MS Word. Historical technical implementation here is to count the characters in all html <article> tags on a page.|235, 1742|
+|page.contentType|string|The template used by type|Article, Home, Careers, etc|
 |page.daysSinceLastPublish|string|The Days Since CMS Publication variable captures the number of days since the page was published live onto the site. This variable may have multiple entries; choose the largest value.|
 |page.displayDate|string|The Display Date variable captures the date when a page or piece of content was last published to the site per SiteCore CMS|
 |page.editorialMonthPublicationDate|string|The Editorial Month Publication Date variable captures the date, from the SiteCore CMS, when a piece of content was published onto the site.|
-|page.pageCategory|string|Captures the root domain folder (the ".com") of the URL. Example: http://www.mckinsey.com/insights/marketing_sales/five_ways_to_get_more_from_digital_advertising; here, Site Section 1 is www.mckinsey.com.|
+|page.domain|string|Captures the root domain folder (the ".com") of the URL. Example: http://www.mckinsey.com/insights/marketing_sales/five_ways_to_get_more_from_digital_advertising; here, Site Section 1 is www.mckinsey.com.|
 |page.pageName|string|The Page Name variable is a copy of the Page value.|
 |page.pageTitle|string|The Page Title variable captures what is displayed at the very top of a user's web browser (in the tab). Currently set to JS value document.title.|
-|page.pageTopic|string|The Page Topic variable captures the topic (usually the main heading value) of a page; for I&P pages this value usually matches the part of the page name after "article:" or "report:" For example: http://www.mckinsey.com/insights/marketing_sales/five_ways_to_get_more_from_digital_advertising; here, Page Topic is: five ways to get more from digital advertising.|
 |page.pageType|string|Report of page template used by type (Article, Home, Careers, etc)|Article|
 |page.siteCoreId|string|The SiteCore ID variable captures the ID # of the web page from the SiteCore CMS, if SiteCore was used to publish the content.|
 |page.subsection|string|The Site Section 2 variable captures the site section (1st subfolder of  the URL), with the exception of the site home page, which is set to "McKinsey Dotcom Home_Page." Site Section 2 is used to analyze site section Pathing via the Paths > Site Section 2 report. Example: http://www.mckinsey.com/insights/marketing_sales/five_ways_to_get_more_from_digital_advertising; here, Site Section 2 is insights.|insights|

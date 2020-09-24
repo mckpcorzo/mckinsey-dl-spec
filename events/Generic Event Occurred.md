@@ -19,6 +19,6 @@ appEventData.push({
 
 |Field|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|action|string|Used to capture the associated category of the generic interaction event|footnote links,  related article link, podcast start, etc.|
-|category|string|Used to capture the associated action of the generic interaction event|click, play, impression, start, etc.|
+|action|string|Used to capture the associated action of the generic interaction event|click, play, impression, start, etc.|
+|category|string|Used to capture the associated category of the generic interaction event|footnote links,  related article link, podcast start, etc.|
 |label|string|Used to capture the associated label of the generic interaction event|footnote #, related article name, podcast name, etc.|
