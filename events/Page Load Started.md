@@ -16,7 +16,6 @@ appEventData.push({
     "domain": "<domain>",
     "pageName": "<pageName>",
     "pageTitle": "<pageTitle>",
-    "pageType": "<pageType>",
     "siteCoreId": "<siteCoreId>",
     "subsection": "<subsection>",
     "subsection2": "<subsection2>",
@@ -43,7 +42,6 @@ appEventData.push({
 |page.domain|string|Captures the root domain folder (the ".com") of the URL. Example: http://www.mckinsey.com/insights/marketing_sales/five_ways_to_get_more_from_digital_advertising; here, Site Section 1 is www.mckinsey.com.|
 |page.pageName|string|The Page Name variable is a copy of the Page value.|
 |page.pageTitle|string|The Page Title variable captures what is displayed at the very top of a user's web browser (in the tab). Currently set to JS value document.title.|
-|page.pageType|string|Report of page template used by type (Article, Home, Careers, etc)|Article|
 |page.siteCoreId|string|The SiteCore ID variable captures the ID # of the web page from the SiteCore CMS, if SiteCore was used to publish the content.|
 |page.subsection|string|The Site Section 2 variable captures the site section (1st subfolder of  the URL), with the exception of the site home page, which is set to "McKinsey Dotcom Home_Page." Site Section 2 is used to analyze site section Pathing via the Paths > Site Section 2 report. Example: http://www.mckinsey.com/insights/marketing_sales/five_ways_to_get_more_from_digital_advertising; here, Site Section 2 is insights.|insights|
 |page.subsection2|string|The Site Section 3 variable captures the 2nd subfolder of the site URL after the root domain folder. Example: http://www.mckinsey.com/insights/marketing_sales/five_ways_to_get_more_from_digital_advertising; here, Site Section 3 is marketing_sales.|marketing_sales|

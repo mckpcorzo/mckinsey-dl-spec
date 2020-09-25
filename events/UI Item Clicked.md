@@ -6,11 +6,11 @@ These HTML attributes should be added to items that do not qualify as CTAs, but 
 
 ```html
   <a href="<linkDestination>"
-    data-layer-eventPrefix="UI Item"
-    data-layer-action="click"
-    data-layer-category="<category>"
-    data-layer-subcategory="<subcategory?>"
-    data-layer-linkText="<linkText?>"
+    data-layer-linkInfo-eventPrefix="UI Item"
+    data-layer-linkInfo-action="click"
+    data-layer-linkInfo-category="<category>"
+    data-layer-linkInfo-subcategory="<subcategory?>"
+    data-layer-linkInfo-text="<text?>"
   >
 ```
 

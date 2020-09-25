@@ -8,12 +8,12 @@ Download link clicks will be automatically detected by comparing the href of the
   <a href="<linkDestination>" 
     data-layer-eventPrefix="Download Link"
     data-layer-action="click"
-    data-layer-category="<category>"
-    data-layer-subcategory="<subcategory?>"
-    data-layer-fileName="<fileName>" 
-    data-layer-reportName="<reportName>"
-    data-layer-reportType="<fileType>"
-    data-layer-text="<text?>"
+    data-layer-linkInfo-category="<category>"
+    data-layer-linkInfo-subcategory="<subcategory?>"
+    data-layer-linkInfo-fileName="<fileName>" 
+    data-layer-linkInfo-reportName="<reportName>"
+    data-layer-linkInfo-reportType="<fileType>"
+    data-layer-linkInfo-text="<text?>"
   >
 ```
 Items with a ? are optional
@@ -45,6 +45,6 @@ Items with a ? may not be generated depending on what attributes are present and
 |subcategory|string|Subcategory of the CTA|facebook, recommended products
 |fileName|string|Indicates the filename for download link tracking. Derived from the anchor href attribute|Year End 2012.pdf, Operating Instructions.doc|
 |region|string|Pipe-delimited list of all regions in ancestry of clicked item. Automatically generated.|
-|linkText|string|Text contents of the item clicked on, or an alternative text label to use instead|Chat with us, Visit our Twitter Page|
+|text|string|Text contents of the item clicked on, or an alternative text label to use instead|Chat with us, Visit our Twitter Page|
 |reportName|string|Name of a downloaded file as specified by McKinsey|meet-the-next-normal-consumer|
 |reportType|string|Type of a downloaded file. Not the file extension, but rather custom types provided by the site.|pdf, article|
