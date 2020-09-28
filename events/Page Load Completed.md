@@ -15,4 +15,6 @@ appEventData.push({
 
 ## Variable Definitions
 
+|Field|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |page.characterLength|integer|The Content Character Length variable counts the number of characters within the body of an I&P page; it is common to get multiple values for this variable due to different browsers. This is also classified into Article Length segments based off an estimated word count (6.7 characters = 1 word); this count is most comparable to the "characters with spaces" count in MS Word. Historical technical implementation here is to count the characters in all html <article> tags on a page.|235, 1742|
