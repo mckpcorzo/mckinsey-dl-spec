@@ -1,6 +1,20 @@
 # Generic Event Occurred
 
-Fire whenever a generic event with no specific built-in or custom dimensions or metrics occurs.
+Fire whenever a generic event with no specific built-in or custom dimensions or metrics occurs. For click events, you can leverage the data attribute spec instead of pushing the DL events manually.
+
+## Data Attributes HTML Code
+
+```html
+  <a href="<linkDestination>"
+    data-layer-event="Generic Event Occurred"
+    data-layer-action="click"
+    data-layer-genericEvent-action="<action>"
+    data-layer-genericEvent-category="<category>"
+    data-layer-genericEvent-label="<linkText?>"
+  >
+```
+
+Items with a ? are optional
 
 ## Javascript Code
 

@@ -8,7 +8,6 @@ window.appEventData = window.appEventData || [];
 appEventData.push({
   "event": "Page Load Started",
   "page": {
-    "characterLength": "<characterLength>",
     "contentType": "<contentType>",
     "daysSinceLastPublish": "<daysSinceLastPublish>",
     "displayDate": "<displayDate>",
@@ -34,7 +33,6 @@ appEventData.push({
 |Field|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |article.source|string|The Publishing Source variable captures the publishing source of a piece of content (McKinsey Quarterly, MGI, etc.); if a value isn't available, the default value is set to "McKinsey Generic."|
-|page.characterLength|integer|The Content Character Length variable counts the number of characters within the body of an I&P page; it is common to get multiple values for this variable due to different browsers. This is also classified into Article Length segments based off an estimated word count (6.7 characters = 1 word); this count is most comparable to the "characters with spaces" count in MS Word. Historical technical implementation here is to count the characters in all html <article> tags on a page.|235, 1742|
 |page.contentType|string|The template used by type|Article, Home, Careers, etc|
 |page.daysSinceLastPublish|string|The Days Since CMS Publication variable captures the number of days since the page was published live onto the site. This variable may have multiple entries; choose the largest value.|
 |page.displayDate|string|The Display Date variable captures the date when a page or piece of content was last published to the site per SiteCore CMS|
