@@ -1,4 +1,4 @@
-# Form Submission Succeeded
+# Form Cleared
 
 Fire whenever a form clear/reset action is performed.
 
@@ -7,7 +7,7 @@ Fire whenever a form clear/reset action is performed.
 ```js
 window.appEventData = window.appEventData || [];
 appEventData.push({
-  "event": "Form Submission Succeeded",
+  "event": "Form Cleared",
   "form": {
     "formID": "<formID>",
     "formName": "<formName>"
