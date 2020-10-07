@@ -25,8 +25,9 @@ window.appEventData = window.appEventData || [];
 appEventData.push({
   "event": "Download Link Clicked",
   "linkInfo": {
-    "category": "<category>"
-    "subcategory": "<subcategory?>"
+    "category": "<category?>",
+    "subcategory": "<subcategory?>",
+    "subcategory2": "<subcategory2?>",
     "fileName": "<fileName>",
     "linkRegion": "<linkRegion?>",
     "reportName": "<reportName>"
@@ -41,10 +42,11 @@ Items with a ? may not be generated depending on what attributes are present and
 
 |Field|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|category|string|Category of the CTA|chat, social, buy now
-|subcategory|string|Subcategory of the CTA|facebook, recommended products
+|category|string|Category of the link|chat, ecommerce, learn more, share, subscribe, visit|
+|subcategory|string|Subcategory of the link|buy now, email, print, social|
+|subcategory2|string|Subcategory tier 2 of the link. Often used for service names, such as with a share > social.|facebook, twitter|
 |fileName|string|Indicates the filename for download link tracking. Derived from the anchor href attribute|Year End 2012.pdf, Operating Instructions.doc|
 |region|string|Pipe-delimited list of all regions in ancestry of clicked item. Automatically generated.|
-|text|string|Text contents of the item clicked on, or an alternative text label to use instead|Chat with us, Visit our Twitter Page|
+|text|string|Text contents of the item clicked on, or an alternative text label to use instead|Download File|
 |reportName|string|Name of a downloaded file as specified by McKinsey|meet-the-next-normal-consumer|
 |reportType|string|Type of a downloaded file. Not the file extension, but rather custom types provided by the site.|pdf, article|
