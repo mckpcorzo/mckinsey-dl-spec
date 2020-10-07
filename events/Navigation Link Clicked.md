@@ -6,11 +6,12 @@ This is the fallback event that will be sent if an HTML anchor link is clicked a
 
 ```html
   <a href="<linkDestination>"
-    data-layer-eventPrefix="Navigation Link"
+    data-layer-eventprefix="Navigation Link"
     data-layer-action="click"
-    data-layer-category="<category?>"
+    data-layer-category="<category>"
     data-layer-subcategory="<subcategory?>"
-    data-layer-text="<linkText?>"
+    data-layer-subcategory2="<subcategory2?>"
+    data-layer-text="<text?>"
   >
 ```
 
@@ -23,7 +24,7 @@ window.appEventData = window.appEventData || [];
 appEventData.push({
   "event": "Navigation Link Clicked",
   "linkInfo": {
-    "category": "<category>",
+    "category": "<category?>",
     "subcategory": "<subcategory?>",
     "subcategory2": "<subcategory2?>",
     "region": "<region?>",

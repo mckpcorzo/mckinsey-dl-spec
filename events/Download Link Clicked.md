@@ -1,19 +1,21 @@
 # Download Link Clicked
 
-Download link clicks will be automatically detected by comparing the href of the link clicked to a predefined list of file extensions. This spec is for manually firing download links if necessary in the future, such as for a button that asynchronously generates the file that will be downloaded using an onClick event.
+Download link clicks will be automatically detected by comparing the href of the link clicked to a predefined list of file extensions. This spec is for manually firing download links if necessary, such as for a button that asynchronously generates the file that will be downloaded using an onClick event.
 
 ## Data Attributes HTML Code
 
 ```html
   <a href="<linkDestination>" 
-    data-layer-eventPrefix="Download Link"
+    data-layer-event-prefix="Download Link"
     data-layer-action="click"
-    data-layer-linkInfo-category="<category>"
-    data-layer-linkInfo-subcategory="<subcategory?>"
-    data-layer-linkInfo-fileName="<fileName>" 
-    data-layer-linkInfo-reportName="<reportName>"
-    data-layer-linkInfo-reportType="<fileType>"
-    data-layer-linkInfo-text="<text?>"
+    data-layer-category="<category>"
+    data-layer-subcategory="<subcategory?>"
+    data-layer-subcategory2="<subcategory2?>"
+    data-layer-text="<text?>"
+
+    data-layer-file-name="<fileName>" 
+    data-layer-report-name="<reportName>"
+    data-layer-report-type="<fileType>"
   >
 ```
 Items with a ? are optional
