@@ -8,9 +8,9 @@ Fire whenever a generic event with no specific built-in or custom dimensions or 
   <a href="<linkDestination>"
     data-layer-event="Generic Event Occurred"
     data-layer-action="click"
-    data-layer-genericEvent-action="<action>"
-    data-layer-genericEvent-category="<category>"
-    data-layer-genericEvent-label="<linkText?>"
+    data-layer-generic-action="<action>"
+    data-layer-generic-category="<category>"
+    data-layer-generic-label="<linkText?>"
   >
 ```
 
