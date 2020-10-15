@@ -6,7 +6,7 @@ Exit link clicks will be automatically detected by comparing the list of domains
 
 ```html
   <a href="<linkDestination>"
-    data-layer-eventprefix="Exit Link"
+    data-layer-event-prefix="Exit Link"
     data-layer-action="click"
     data-layer-category="<category>"
     data-layer-subcategory="<subcategory?>"

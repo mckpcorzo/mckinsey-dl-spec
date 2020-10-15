@@ -6,7 +6,7 @@ This is the fallback event that will be sent if an HTML anchor link is clicked a
 
 ```html
   <a href="<linkDestination>"
-    data-layer-eventprefix="Navigation Link"
+    data-layer-event-prefix="Navigation Link"
     data-layer-action="click"
     data-layer-category="<category>"
     data-layer-subcategory="<subcategory?>"

@@ -6,7 +6,7 @@ These HTML attributes should be added to items that do not qualify as CTAs, but 
 
 ```html
   <a href="<linkDestination>"
-    data-layer-eventprefix="UI Item"
+    data-layer-event-prefix="UI Item"
     data-layer-action="click"
     data-layer-category="<category>"
     data-layer-subcategory="<subcategory?>"

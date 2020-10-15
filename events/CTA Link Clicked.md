@@ -4,7 +4,7 @@
 
 ```html
   <a href="<linkDestination>"
-    data-layer-eventprefix="CTA Link"
+    data-layer-event-prefix="CTA Link"
     data-layer-action="click"
     data-layer-category="<category>"
     data-layer-subcategory="<subcategory?>"
