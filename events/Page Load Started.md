@@ -24,6 +24,7 @@ appEventData.push({
   },
   "article": {
     "source": "<source>"
+    "type": "<type>",
   }
 });
 ```
@@ -33,6 +34,7 @@ appEventData.push({
 |Field|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |article.source|string|The Publishing Source variable captures the publishing source of a piece of content (McKinsey Quarterly, MGI, etc.); if a value isn't available, the default value is set to "McKinsey Generic."|
+|article.type|string|Type of article|article, executive briefing, interactive|
 |page.contentType|string|The template used by type|Article, Home, Careers, etc|
 |page.daysSinceLastPublish|string|The Days Since CMS Publication variable captures the number of days since the page was published live onto the site. This variable may have multiple entries; choose the largest value.|
 |page.displayDate|string|The Display Date variable captures the date when a page or piece of content was last published to the site per SiteCore CMS|
