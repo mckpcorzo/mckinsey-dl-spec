@@ -1,15 +1,14 @@
-# Content Listing Refined
+# Onsite Search Performed
 
-Fire whenever a user clicks on a search feature that refines or otherwise modifies the search results.
+Fire whenever a user performs a search.
 
 ## Javascript Code
 
 ```js
 window.appEventData = window.appEventData || [];
 appEventData.push({
-  "event": "Content Listing Refined",
+  "event": "Onsite Search Performed",
   "listingRefined": {
-    "refinementType": "<refinementType",
     "searchType": "<searchType>"
   }
 });
@@ -18,5 +17,4 @@ appEventData.push({
 
 |Field|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|refinementType|string|Describes the type of refinement performed.|filter, sort|
 |searchType|string|Describes the type of search performed.|article, content, job, people, etc.|
