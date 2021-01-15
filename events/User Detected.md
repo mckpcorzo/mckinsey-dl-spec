@@ -13,7 +13,15 @@ appEventData.push({
     "custKey": "<custKey>",
     "jobTitle": "<jobTitle>",
     "loginStatus": "<loginStatus>",
-    "userType": "<userType>"
+    "userType": "<userType>",
+    "alumni": {
+      "addressContinent": "<addressContinent>"
+      "fmno": "<FMNO>",
+      "location": "<location>",
+      "recruiterId": "<recruiterId>",
+      "skillLevel": "<skillLevel>",
+      "transitionFlag": "<transitionFlag>",
+    },
   }
 });
 ```
