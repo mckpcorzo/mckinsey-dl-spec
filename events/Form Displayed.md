@@ -11,6 +11,7 @@ appEventData.push({
   "form": {
     "formID": "<formID>",
     "formName": "<formName>"
+    "formType": "<formType>"
   }
 });
 ```
@@ -20,3 +21,4 @@ appEventData.push({
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |formID|string|Unique identifier of a form.|F-0113, 2543, CU001, PI-0988|
 |formName|string|Plain text form name. Generally used if formID is not obtainable.|Payment Info, Mailing Address, Payment Address, Contact Us|
+|formType|string|Form type used for grouping of similar forms in reports.|profile, registration|
