@@ -27,7 +27,7 @@ appEventData.push({
     "category": "<category?>",
     "subcategory": "<subcategory?>",
     "subcategory2": "<subcategory2?>",
-    "region": "<region?>",
+    "regions": "<region?>",
     "text": "<text>",
   }
 });
