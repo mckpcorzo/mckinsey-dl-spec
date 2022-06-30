@@ -12,6 +12,7 @@ These HTML attributes should be added to items that do not qualify as CTAs, but 
     data-layer-subcategory="<subcategory?>"
     data-layer-subcategory2="<subcategory2?>"
     data-layer-text="<text?>"
+    data-layer-item-position="<itemPosition?>"
   >
 ```
 
@@ -28,6 +29,7 @@ appEventData.push({
     "subcategory": "<subcategory>"
     "regions": "<regions?>",
     "text": "<text>",
+    "itemPosition": "<itemPosition>"
   }
 });
 ```
@@ -43,3 +45,4 @@ Items with a ? may not be generated depending on what attributes are present and
 |subcategory2|string|Subcategory tier 2 of the link. Often used for service names, such as with a share > social.|facebook, twitter|
 |regions|string|Pipe-delimited list of all regions in ancestry of clicked item. Automatically generated.|
 |text|string|Text contents of the item clicked on, or an alternative text label to use instead|Chat with us, Visit our Twitter Page|
+|itemPosition|integer|Integer position of a property within a sorted result. The first returned is position 1. For map results, this value can be the rank by distance from POI.|1, 2, 3, 4, 5|
