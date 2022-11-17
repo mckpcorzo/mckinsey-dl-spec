@@ -12,6 +12,7 @@ This is the fallback event that will be sent if an HTML anchor link is clicked a
     data-layer-subcategory="<subcategory?>"
     data-layer-subcategory2="<subcategory2?>"
     data-layer-text="<text?>"
+    data-layer-regions="<section>"     
   >
 ```
 
